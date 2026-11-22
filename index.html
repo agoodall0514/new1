@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Texas Law Officer AI">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="styles.css"><title>Texas Law Officer AI</title></head>
+<body><header><div><b>TEXAS LAW OFFICER AI</b><small>Texas legal research & decision support</small></div><button id="install" hidden>Install</button></header>
+<main><div class="privacy"><b>Privacy first.</b> Do not enter real names, DOBs, addresses, phone numbers, DLs, plates, VINs, case numbers, medical details, juvenile identifiers, or other confidential information.</div>
+<section><label>People in the scenario</label><div id="people"></div><div class="row"><select id="person"><option>John</option><option>Jane</option><option>Michael</option><option>Sarah</option><option>David</option><option>Emily</option><option>Robert</option><option>Jessica</option></select><input id="age" type="number" min="0" max="120" placeholder="Age"><button id="add">Add Person</button></div></section>
+<section><label>What are you dealing with?</label><textarea id="scenario" rows="7" placeholder="Describe the situation using generic names only..."></textarea><button id="safe">Make My Question Safe</button></section>
+<section><label>What do you want to know?</label><textarea id="question" rows="3" placeholder="Example: Does this establish theft, and what facts still need to be documented?"></textarea>
+<label>Research sources</label><div class="chips"><button class="chip active">All Texas Law</button><button class="chip">Penal Code</button><button class="chip">CCP</button><button class="chip">Transportation Code</button><button class="chip">Property Code</button><button class="chip">Family Code</button><button class="chip">Case Law</button></div>
+<button id="ask" class="primary">ASK TEXAS LAW OFFICER AI</button></section>
+<section id="result" hidden></section>
+<div class="grid"><button data-a="missing">Missing / Alerts</button><button data-a="report">Report Check</button><button data-a="law">Texas Law</button><button data-a="research">Research</button></div>
+<section class="note"><b>Important:</b> This is a decision-support interface, not a substitute for current statutes, controlling case law, department policy, prosecutor guidance, or legal advice.</section></main>
+<footer>Texas Law Officer AI • No scenario storage by this app</footer><script src="app.js"></script></body></html>
